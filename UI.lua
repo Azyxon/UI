@@ -21,14 +21,14 @@ if not Games then
     while true do end
 end
 
-if not isfolder("baller") then makefolder("baller") end
-if not isfolder("baller/" .. Games) then makefolder("baller/" .. Games) end
+if not isfolder("exscord") then makefolder("exscord") end
+if not isfolder("exscord/" .. Games) then makefolder("exscord/" .. Games) end
 
-local MenuName = isfile("baller/MenuName.txt") and readfile("baller/MenuName.txt") or "baller.lua"
+local MenuName = isfile("exscord/MenuName.txt") and readfile("exscord/MenuName.txt") or "exscord.lua"
 
 
 
-local library = {tabs = {}, draggable = true, flags = {}, title = MenuName, open = false, mousestate = true, popup = nil, instances = {}, connections = {}, options = {}, notifications = {}, tabSize = 0, theme = {}, foldername = 'baller\\' .. Games .. '\\Configs', fileext = '.lua'}
+local library = {tabs = {}, draggable = true, flags = {}, title = MenuName, open = false, mousestate = true, popup = nil, instances = {}, connections = {}, options = {}, notifications = {}, tabSize = 0, theme = {}, foldername = 'exscord\\' .. Games .. '\\Configs', fileext = '.lua'}
 getgenv().library = library
 
 --Locals
