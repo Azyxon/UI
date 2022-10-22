@@ -15,6 +15,7 @@ local Games = ({
     [863266079] = 'AR2',
     [286090429] = 'Arsenal',
     [10293798252] = 'Reloaded', -- Arsenal Reloaded
+    [9872472334] = 'Evade',
 })[game.PlaceId]
 
 if not Games then
