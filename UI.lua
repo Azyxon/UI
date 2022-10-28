@@ -11,11 +11,9 @@ if getgenv().library then
 end
 
 local Games = ({
-   -- [4483381587] = 'Baseplate',
+    [4483381587] = 'Baseplate',
     [863266079] = 'AR2',
-    --[286090429] = 'Arsenal',
-    --[10293798252] = 'Reloaded', -- Arsenal Reloaded
-   -- [9872472334] = 'Evade',
+    [286090429] = 'Arsenal',
 })[game.PlaceId]
 
 if not Games then
