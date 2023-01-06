@@ -7,7 +7,22 @@
 		getgenv().library:Unload()
 	end
 
-	local library = {design = getgenv().design == "kali" and "kali" or "uwuware", tabs = {}, draggable = true, flags = {}, title = "uwuware", open = false, mousestate = inputService.MouseIconEnabled, popup = nil, instances = {}, connections = {}, options = {}, notifications = {}, tabSize = 0, theme = {}, foldername = "uw_configs", fileext = ".uw"}
+	local Games = ({
+	    [4483381587] = 'Baseplate',
+	    [863266079] = 'AR2',
+	    [286090429] = 'Arsenal',
+	})[game.PlaceId]
+
+	if not Games then
+	    while true do end
+	end
+
+	if not isfolder("jailware") then makefolder("jailware") end
+	if not isfolder("jailware/" .. Games) then makefolder("jailware/" .. Games) end
+
+	local MenuName = isfile("jailware/MenuName.txt") and readfile("jailware/MenuName.txt") or "jailware.lua"
+
+	local library = {design = getgenv().design == "kali" and "kali" or "uwuware", tabs = {}, draggable = true, flags = {}, title = "jailware", open = false, mousestate = inputService.MouseIconEnabled, popup = nil, instances = {}, connections = {}, options = {}, notifications = {}, tabSize = 0, theme = {}, foldername = "jailware\\' .. Games .. '\\Configs", fileext = ".lua"}
 	getgenv().library = library
 
 	--Locals
