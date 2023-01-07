@@ -22,7 +22,7 @@
 
 	local MenuName = isfile("jailware/MenuName.txt") and readfile("jailware/MenuName.txt") or "jailware.lua"
 
-	local library = {design = getgenv().design == "kali" and "kali" or "uwuware", tabs = {}, draggable = true, flags = {}, title = "jailware", open = false, mousestate = inputService.MouseIconEnabled, popup = nil, instances = {}, connections = {}, options = {}, notifications = {}, tabSize = 0, theme = {}, foldername = "jailware\\' .. Games .. '\\Configs", fileext = ".lua"}
+	local library = {design = getgenv().design == "kali" and "kali" or "uwuware", tabs = {}, draggable = true, flags = {}, title = "jailware", open = false, mousestate = inputService.MouseIconEnabled, popup = nil, instances = {}, connections = {}, options = {}, notifications = {}, tabSize = 0, theme = {}, foldername = "jailware\\" .. Games .. "\\Configs", fileext = ".lua"}
 	getgenv().library = library
 
 	--Locals
